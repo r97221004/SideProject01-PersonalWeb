@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewpoint" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>{% block title %}Matt的個人網站{% endblock %}</title>
+    <link rel="icon" href="{{ url_for('static', filename='favicon.ico') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.min.css') }}" type="text/css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}" type="text/css">
+
+    <style>
+        .bd-placeholder-img {
+          font-size: 1.125rem;
+          text-anchor: middle;
+          -webkit-user-select: none;
+          -moz-user-select: none;
+          -ms-user-select: none;
+          user-select: none;
+        }
+  
+        @media (min-width: 768px) {
+          .bd-placeholder-img-lg {
+            font-size: 3.5rem;
+          }
+        }
+    </style>
+</head>
+<body class="text-center">
+    <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
+        <header class="masthead mb-auto">
+        <div class="inner">
+            <h3 class="masthead-brand display-4">{% block name %}<span class="matt">Matt</span>{% endblock%}</h3>
+            <nav class="nav nav-masthead justify-content-center">
+            <a class="nav-link active" href="{{ url_for('index') }}">首頁</a>
+            <a class="nav-link" href="/#education">學歷</a>
+            <a class="nav-link" href="/#experience">經歷</a>
+            </nav>
+        </div>
+        </header>
+
+        <main role="main" class="inner cover">
+        {% block main %}
+  
+    
+        {% endblock %}
+        </main> 
+
+        <div class="container">
+          {% block footer %}
+          <footer class="row row-cols-5 py-5 my-5 ">
+            <div class="col">
+              <a href="/" class="d-flex align-items-center mb-3 link-dark text-decoration-none">
+                <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"/></svg>
+              </a>
+              <p class="text-muted">&copy; 2021</p>
+            </div>
+        
+            <div class="col">
+        
+            </div>
+        
+            <div class="col">
+              <h5 class="text-left">有疑問嗎? 請聯絡我｡</h5>
+              <ul class="nav flex-column text-left">
+                <li class="nav-item mb-2"><a  class="nav-link p-0 text-muted">台中, 台北</a></li>
+                <li class="nav-item mb-2"><a  class="nav-link p-0 text-muted">0911-458176</a></li>
+                <li class="nav-item mb-2"><a  class="nav-link p-0 text-muted">r97221004@gmail.com</a></li>
+              </ul>
+            </div>
+        
+            <div class="col">
+              <h5 class="text-left">社群網路服務網站</h5>
+              <ul class="nav flex-column text-left">
+                <li class="nav-item mb-2"><a href="https://www.linkedin.com/in/%E5%AE%B6%E8%B1%AA-%E5%BC%B5-3b92b7163/" class="nav-link p-0 text-muted">LinkedIn</a></li>
+                <li class="nav-item mb-2"><a href="https://www.facebook.com/profile.php?id=100001430323403" class="nav-link p-0 text-muted">Facebook</a></li>
+                <li class="nav-item mb-2"><a href="https://www.cakeresume.com/me/r97221004" class="nav-link p-0 text-muted">CakeResume</a></li>
+              </ul>
+            </div>
+        
+            <div class="col">
+              <h5 class="text-left">學習歷程與作品集</h5>
+              <ul class="nav flex-column text-left">
+                <li class="nav-item mb-2"><a href="https://github.com/r97221004" class="nav-link p-0 text-muted">Github</a></li> 
+              </ul>
+            </div>
+          </footer>
+        </div>     
+      {% endblock %}  
+    </div>
+
+    
+    
+    
+<script type="text/javascript" src="{{ url_for('static', filename='js/jquery-3.2.1.slim.min.js') }}"></script>
+<script type="text/javascript" src="{{ url_for('static', filename='js/popper.min.js') }}"></script>
+<script type="text/javascript" src="{{ url_for('static', filename='js/bootstrap.min.js') }}"></script>
+<script type="text/javascript" src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>
