@@ -136,6 +136,8 @@ body {
 .step{
   margin-top: 100px;
   font-weight: bold;
+  font-family: "Microsoft YaHei";
+
 }
 
 .about{
@@ -148,6 +150,7 @@ body {
 
 .school{
   font-weight: bold;
+  font-family: "Microsoft YaHei";
 }
 
 .date{
@@ -157,6 +160,7 @@ body {
 
 .cont{
   font-weight: bold;
+  font-family: "Microsoft YaHei";
 }
 
 .education{
@@ -302,4 +306,13 @@ body {
   font-size: 25px;
   font-weight: bold;
   padding: 20px;
+}
+
+.error{
+  border: 2px solid white;
+  font-family:"Microsoft YaHei";
+  font-weight: bold;
+  font-size: 50px;
+  height: 300px;
+  border-radius: 3rem;
 }

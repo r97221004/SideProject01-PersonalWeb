@@ -12,5 +12,5 @@ db = SQLAlchemy(app)
 bootstrap = Bootstrap(app)
 moment = Moment(app)
 
-from PersonalWeb import views, models, forms
+from PersonalWeb import views, models, forms, errors
 
