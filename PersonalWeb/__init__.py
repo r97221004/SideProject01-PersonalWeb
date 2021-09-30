@@ -11,3 +11,4 @@ db = SQLAlchemy(app)
 bootstrap = Bootstrap(app)
 
 from PersonalWeb import views, models, forms
+

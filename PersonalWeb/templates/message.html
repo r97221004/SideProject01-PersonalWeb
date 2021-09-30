@@ -3,7 +3,7 @@
 
 {% block title %}留言板{% endblock %}
 {% block name %}
-    <span class="matt">Matt</span>〡<span class="cont">留言板</span>
+    <span class="matt">Matt</span>〡<span class="mess">留言板</span>
 {% endblock%}
 
 {% block main %}
@@ -18,21 +18,17 @@
 <!-- <div class="text-left">
 {{ render_form(form, button_map = {'submit':'danger'}, extra_classes = 'message') }}
 </div> -->
+
+
 <div class="row featurette message">
-    <div class="col-md-6 text-left">
+    <div class="col-md-2 text-left right">
+    </div>
+    <div class="col-md-8 text-left left">
         {{ render_form(form, button_map = {'submit':'danger'}, extra_classes = 'message') }}
     </div>
-    <div class="col-md-6">
-      <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 200x200" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#eee"/>
-        <image xlink:href="{{ url_for('static', filename='education.png') }} "width="100%" height="100%"/>
-      </svg>
+    <div class="col-md-2 text-left right">
     </div>
 </div>
-
-
-
-
-
 
 <div class="text-center total"  style = " margin-top: 10%; margin-bottom: 35px;">
     總共有{{ messages | length}}筆留言
@@ -41,9 +37,13 @@
     {% for message in messages %}
         <a class="list-group-item list-group-item-action flex-column mylist">
             <div class="d-flex w-100 justify-content-between">
-                <span class="name">{{message.name}}</span>
-            </div>
+                <span class="mb-1 name">
+                    {{message.name}}<small class="text-muted"> #{{ loop.revindex }}</small>
+                </span > 
+                <span class="mb-1 name"> {{ message.timestamp.strftime('%Y/%m/%d %H:%M') }}</span>
+            </div>   
         </a>
+        <p class ="mb-1 text-left word">{{ message.body }}</p>
     {% endfor %}
 </div>    
 
