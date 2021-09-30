@@ -40,7 +40,7 @@
                 <span class="mb-1 name">
                     {{message.name}}<small class="text-muted"> #{{ loop.revindex }}</small>
                 </span > 
-                <span class="mb-1 name"> {{ message.timestamp.strftime('%Y/%m/%d %H:%M') }}</span>
+                <span class="mb-1 name"> {{ moment(message.timestamp).fromNow(refresh=True) }}</span>
             </div>   
         </a>
         <p class ="mb-1 text-left word">{{ message.body }}</p>
