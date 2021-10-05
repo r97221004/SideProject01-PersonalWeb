@@ -107,6 +107,32 @@ body {
 
 /* -------------------- 自定義 -------------------------------*/
 
+.matt {
+  color: red;
+  font-weight: bold;
+}
+
+.about{
+  margin-left: 100px;
+  margin-right: 100px;
+  margin-top: 100pt;
+  margin-bottom: 300px;
+  background-image: url(../background.jpg);
+}
+
+.cont{
+  font-weight: bold;
+  font-family: "Microsoft YaHei";
+}
+
+.divider{
+  height: 10px;
+  width: 100%;
+  background-color:#717171; 
+  margin-top: 150px ;
+  margin-bottom: 150px;
+}
+
 
 .social {
   height: 35px;
@@ -114,15 +140,7 @@ body {
   margin-right: 10px;
 }
 
-.divider{
-  position: relative;
-  height: 10px;
-  width: 100%;
-  background-color:#717171; 
-  
-  margin-top: 150px ;
-  margin-bottom: 150px;
-}
+
 
 .divider1{
   position: relative;
@@ -133,20 +151,8 @@ body {
   margin-top: 150px ;
 }
 
-.step{
-  margin-top: 100px;
-  font-weight: bold;
-  font-family: "Microsoft YaHei";
 
-}
 
-.about{
-  margin-left: 100px;
-  margin-right: 100px;
-  height: 400px;
-  background-image: url(../background.jpg);
-  margin-bottom: 50px;
-}
 
 .school{
   font-weight: bold;
@@ -158,10 +164,7 @@ body {
   padding-left: 10px;
 }
 
-.cont{
-  font-weight: bold;
-  font-family: "Microsoft YaHei";
-}
+
 
 .education{
   margin-bottom: 150px;
@@ -219,11 +222,7 @@ body {
   margin-top: 50px;
 }
 
-.matt {
-  color: red;
-  font-weight: bold;
 
-}
 
 .mylist{
   background-color: #404040;
