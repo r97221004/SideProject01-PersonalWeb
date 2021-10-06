@@ -133,13 +133,30 @@ body {
   margin-bottom: 150px;
 }
 
+.date{
+  font-size: 25px;
+  padding-left: 10px;
+}
+
+.education{
+  margin-bottom: 150px;
+}
+
+
+
+
+
+
+
+
+
+
 
 .social {
   height: 35px;
   width: 35px;
   margin-right: 10px;
 }
-
 
 
 .divider1{
@@ -151,24 +168,6 @@ body {
   margin-top: 150px ;
 }
 
-
-
-
-.school{
-  font-weight: bold;
-  font-family: "Microsoft YaHei";
-}
-
-.date{
-  font-size: 25px;
-  padding-left: 10px;
-}
-
-
-
-.education{
-  margin-bottom: 150px;
-}
 
 .bi {
   vertical-align: -.125em;
