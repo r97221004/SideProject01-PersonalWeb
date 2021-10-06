@@ -133,6 +133,12 @@ body {
   margin-bottom: 150px;
 }
 
+.date{
+  font-size: 25px;
+  padding-left: 10px;
+}
+
+
 
 .social {
   height: 35px;
@@ -154,15 +160,8 @@ body {
 
 
 
-.school{
-  font-weight: bold;
-  font-family: "Microsoft YaHei";
-}
 
-.date{
-  font-size: 25px;
-  padding-left: 10px;
-}
+
 
 
 
