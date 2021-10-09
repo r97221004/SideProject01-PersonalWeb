@@ -112,12 +112,17 @@ body {
   font-weight: bold;
 }
 
+.outer{ 
+  border: 1px solid transparent;
+  background-image: url(../background1.jpg);
+  height: 600px;
+}
+
 .about{
   margin-left: 100px;
   margin-right: 100px;
   margin-top: 100pt;
   margin-bottom: 300px;
-  background-image: url(../background.jpg);
 }
 
 .cont{
