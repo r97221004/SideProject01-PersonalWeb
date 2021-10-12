@@ -3,7 +3,7 @@
 
 {% block title %}留言板{% endblock %}
 {% block name %}
-    <span class="matt">Matt</span>〡<span class="mess">留言板</span>
+    <span class="matt">Matt</span><span class="mess">留言板</span>
 {% endblock%}
 
 {% block main %}
@@ -15,19 +15,13 @@
 </div>
 {% endfor %}
 
-<!-- <div class="text-left">
-{{ render_form(form, button_map = {'submit':'danger'}, extra_classes = 'message') }}
-</div> -->
 
-
-<div class="row featurette message">
-    <div class="col-md-2 text-left right">
-    </div>
-    <div class="col-md-8 text-left left">
+<div class="row">
+    <div class="col-md-2"></div>
+    <div class="col-md-8 text-left center">
         {{ render_form(form, button_map = {'submit':'danger'}, extra_classes = 'message') }}
     </div>
-    <div class="col-md-2 text-left right">
-    </div>
+    <div class="col-md-2"></div>
 </div>
 
 <div class="text-center total"  style = " margin-top: 10%; margin-bottom: 35px;">

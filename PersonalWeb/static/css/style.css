@@ -154,33 +154,13 @@ body {
   margin-top: 150px ;
 }
 
-
-
-
-
-
-
-
-
-.social {
-  height: 35px;
-  width: 35px;
-  margin-right: 10px;
-}
-
-
-.bi {
-  vertical-align: -.125em;
-  fill: currentColor;
-}
-
-.foot{
-  margin-top: 0px;
-}
-
-.message{
+.center{
+  border: 2px solid silver;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  padding-left: 90px;  
   margin-top: 45px;
-  
+  border-radius: 3rem;
 }
 
 .message .btn{
@@ -211,6 +191,45 @@ body {
   font-weight: bold;
   font-family: "Microsoft YaHei";
 }
+
+.mess{
+  position: relative;
+  top: -6px;
+  font-weight: bold;
+  font-family: "Microsoft YaHei";
+  font-size: 40px;
+  padding: 0px;
+  color: white;
+  margin-left: 10px;
+}
+
+
+
+
+
+
+
+
+
+.social {
+  height: 35px;
+  width: 35px;
+  margin-right: 10px;
+}
+
+
+.bi {
+  vertical-align: -.125em;
+  fill: currentColor;
+}
+
+.foot{
+  margin-top: 0px;
+}
+
+
+
+
 
 .flash{
   margin-left: 100px;
@@ -255,31 +274,11 @@ body {
 
 }
 
-.mess{
-  position: relative;
-  top: -7px;
-  font-weight: bold;
-  font-family: "Microsoft YaHei";
-  font-size: 40px;
-  padding: 0px;
-}
 
-.right{
 
-  color: black;
-  padding-bottom: 30px;
-  /* border-radius: 3rem 0 0 3rem; */
-  /* box-shadow: 12px 12px 12px ; */
-}
 
-.left{
-  background-color: black;
-  border-radius: 3rem;
-  border: 2px solid silver;
-  padding-top: 0px;
-  padding-bottom: 30px;
-  padding-left: 90px;  
-}
+
+
 
 .word{
   background-color: #404040;
