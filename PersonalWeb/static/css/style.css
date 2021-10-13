@@ -192,19 +192,15 @@ body {
   font-family: "Microsoft YaHei";
 }
 
-.mess{
-  position: relative;
-  top: -6px;
+.flash{
+  margin-top: 50px;
+  margin-left: 100px;
+  margin-right: 100px;
+  height: 80px;
+  font-size: 30px;
   font-weight: bold;
   font-family: "Microsoft YaHei";
-  font-size: 40px;
-  padding: 0px;
-  color: white;
-  margin-left: 10px;
 }
-
-
-
 
 
 
@@ -226,20 +222,6 @@ body {
 .foot{
   margin-top: 0px;
 }
-
-
-
-
-
-.flash{
-  margin-left: 100px;
-  margin-right: 100px;
-  font-size: 30px;
-  font-weight: bold;
-  height: 80px;
-  margin-top: 50px;
-}
-
 
 
 .mylist{

@@ -2,9 +2,6 @@
 {% from 'bootstrap/form.html' import render_form %}
 
 {% block title %}留言板{% endblock %}
-{% block name %}
-    <span class="matt">Matt</span><span class="mess">留言板</span>
-{% endblock%}
 
 {% block main %}
 
@@ -23,6 +20,7 @@
     </div>
     <div class="col-md-2"></div>
 </div>
+
 
 <div class="text-center total"  style = " margin-top: 10%; margin-bottom: 35px;">
     總共有{{ messages | length}}筆留言
