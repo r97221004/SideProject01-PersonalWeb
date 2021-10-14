@@ -97,13 +97,17 @@ body {
   font-weight: 700;
 }
 
-
 /*
  * Footer
  */
 .mastfoot {
   color: rgba(255, 255, 255, .5);
 }
+
+.bi {
+  vertical-align: -.125em;
+  fill: currentColor;
+} 
 
 /* -------------------- 自定義 -------------------------------*/
 
@@ -202,27 +206,13 @@ body {
   font-family: "Microsoft YaHei";
 }
 
-
-
-
-
-
-.social {
-  height: 35px;
-  width: 35px;
-  margin-right: 10px;
+.total{
+  font-size: 50px;
+  font-weight: bold;
+  font-family: "Microsoft YaHei";
+  margin-top: 150px;
+  margin-bottom: 35px;
 }
-
-
-.bi {
-  vertical-align: -.125em;
-  fill: currentColor;
-}
-
-.foot{
-  margin-top: 0px;
-}
-
 
 .mylist{
   background-color: #404040;
@@ -241,44 +231,16 @@ body {
   width: 60%;
 }
 
-
-
 .name{
   font-size: 25px;
   font-weight: bold;
-  /* height: 100px; */
+  font-family:"Microsoft YaHei" ;
 }
-
-.total{
-  font-size: 50px;
-  font-weight: bold;
-   font-family: "Microsoft YaHei";
-
-}
-
-
-
-
-
-
 
 .word{
   background-color: #404040;
   width: 60%;
   margin-top: 0px;
-  margin-right: auto;
-  margin-left: auto;
-  font-family:"Microsoft YaHei" ;
-  font-size: 25px;
-  font-weight: bold;
-  padding: 20px;
-}
-
-.word:hover{
-  background-color: #404040;
-  width: 60%;
-  margin-top: 0px;
-  margin-bottom: 10px;
   margin-right: auto;
   margin-left: auto;
   font-family:"Microsoft YaHei" ;

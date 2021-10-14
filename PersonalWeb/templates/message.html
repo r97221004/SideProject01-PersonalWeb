@@ -21,21 +21,21 @@
     <div class="col-md-2"></div>
 </div>
 
-
-<div class="text-center total"  style = " margin-top: 10%; margin-bottom: 35px;">
+<div class="total">
     總共有{{ messages | length}}筆留言
 </div>
+
 <div class="list-group">
     {% for message in messages %}
         <a class="list-group-item list-group-item-action flex-column mylist">
             <div class="d-flex w-100 justify-content-between">
                 <span class="mb-1 name">
-                    {{message.name}}<small class="text-muted"> #{{ loop.revindex }}</small>
+                    {{ message.name }}<small class="text-muted"> #{{ loop.revindex }}</small>
                 </span > 
                 <span class="mb-1 name" data-toggle='tooltip' data-placeent="top"
                       data-timestamp="{{ message.timestamp.strftime('%Y-%m-%dT%H:%M:%SZ') }}"
                       data-delay="500"> 
-                    {{ moment(message.timestamp).fromNow(refresh=True) }}
+                      {{ moment(message.timestamp).fromNow(refresh=True) }}
                 </span>
             </div>   
         </a>
@@ -44,6 +44,5 @@
 </div>    
 
 <center ><div class="divider1"></div></center>
-
 
 {% endblock %}

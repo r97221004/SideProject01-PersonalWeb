@@ -25,6 +25,7 @@
         }
     </style>
 </head>
+
 <body class="text-center">
     <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
         <header class="masthead mb-auto">
@@ -87,15 +88,12 @@
         </div>     
       {% endblock %}  
     </div>
-
-    
-    
-    
+  
 <script type="text/javascript" src="{{ url_for('static', filename='js/jquery-3.2.1.slim.min.js') }}"></script>
 <script type="text/javascript" src="{{ url_for('static', filename='js/popper.min.js') }}"></script>
 <script type="text/javascript" src="{{ url_for('static', filename='js/bootstrap.min.js') }}"></script>
 <script type="text/javascript" src="{{ url_for('static', filename='js/script.js') }}"></script>
 {{ moment.include_moment(local_js=url_for('static', filename='js/moment-with-locales.min.js')) }}
-{{ moment.locale('auto_detect=True')}}
+{{ moment.locale('auto_detect=True')}} <!--根據用戶瀏覽器或計算機的語言來設置時間的語言 -->
 </body>
 </html>
