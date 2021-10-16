@@ -11,9 +11,8 @@ else:
     prefix = 'sqlite:////'
 
 
-dev_db = prefix + os.path.join(os.path.dirname(app.root_path), 'data.db')
+dev_db = prefix + os.path.join(os.path.dirname(app.root_path), os.getenv('DATABASE_FILE', 'data.db'))
 
-SECRET_KEY = os.getenv('SECRET_KEY', 'secret string')
-SQLALCHEMY_TRACK_MODIFICATIONS = False
+SECRET_KEY = os.getenv('SECRET_KEY', 'dev')
 SQLALCHEMY_DATABASE_URI = os.getenv('DATABASE_URI', dev_db)
-DEBUG_TB_INTERCEPT_REDIRECTS = False # DebugToolbar  要用到的設定
+SQLALCHEMY_TRACK_MODIFICATIONS = False
