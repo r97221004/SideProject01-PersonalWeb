@@ -31,11 +31,11 @@ body {
 }
 
 body {
-  display: -ms-flexbox;
+  display: -ms-flexbox; 
   display: flex;
   color: #fff;
   text-shadow: 0 .05rem .1rem rgba(0, 0, 0, .5);
-  box-shadow: inset 0 0 5rem rgba(0, 0, 0, .5);
+  box-shadow: inset 10 0 5rem rgba(0, 0, 0, .5);
 }
 
 .cover-container {
@@ -262,3 +262,111 @@ body {
 .wrong{
   font-size: 15px;
 }
+
+.login{
+  font-family:"Microsoft YaHei" ;
+  font-size: 15px;
+  font-weight: bold;
+  width: 70px;
+  height: 35px;
+  margin-left: 15px;
+  margin-top: 0px;
+  padding: .25rem 0px;
+}
+
+.inline{
+  display: inline;
+}
+
+
+input[type=text] {
+  height: 60px; 
+}
+
+input[type=password] {
+  height: 60px;
+}
+
+input[type=submit] {
+  height: 60px;
+  width: 100%;
+  margin-top: 70px;
+  font-size: 20px;
+  font-weight: bold;
+  font-family:"Microsoft YaHei" ;
+}
+
+input[type=checkbox] {
+  width: 20px;
+  height: 20px;
+}
+
+
+.form-check{ 
+  float: left;
+  margin-top: 15px;
+}
+
+.form-check-label{
+  margin-left: 10px;
+}
+
+.lgin{
+  padding-top: 30px;
+  padding-bottom: 50px;
+  padding-right: 90px;
+  padding-left: 90px;
+  background-color:rgba(0, 0, 0, 0.2);
+  height: 550px;
+  position: absolute;
+  top: 100px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  margin: auto;
+}
+
+
+.bodycls{
+  background-color:#4682B4;
+}
+
+/* -------動態網頁的定義-------- */
+
+.img-fluid {
+  max-width: 100%;
+  height: auto;
+}
+
+.content-section {
+  padding-top: 7.5rem;
+  padding-bottom: 7.5rem;
+}
+
+.content-section-heading h2, .content-section-heading .h2 {
+  font-size: 3rem;
+}
+.content-section-heading h3, .content-section-heading .h3 {
+  font-size: 1rem;
+  text-transform: uppercase;
+}
+
+caption {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  color: #6c757d;
+  text-align: left;
+}
+
+.g-0,
+.gx-0 {
+  --bs-gutter-x: 0;
+}
+
+.px-lg-5 {
+  padding-right: 3rem !important;
+  padding-left: 3rem !important;
+}
+
+
+

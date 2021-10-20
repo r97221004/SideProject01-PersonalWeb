@@ -12,7 +12,6 @@
 </div>
 {% endfor %}
 
-
 <div class="row">
     <div class="col-md-2"></div>
     <div class="col-md-8 text-left center">
@@ -30,6 +29,12 @@
         <a class="list-group-item list-group-item-action flex-column mylist">
             <div class="d-flex w-100 justify-content-between">
                 <span class="mb-1 name">
+                    {% if current_user.is_authenticated %}
+                    <form class="inline" method="post" action="{{ url_for('delete_message', message_id=message.id)}}">
+                        <input type="hidden" name='csrf_token' value="{{ csrf_token() }}">
+                        <button type="submit" class="btn btn-warning btn-md" onclick="return confirm('你確定嗎?')">刪除</button>
+                    </form>
+                    {% endif %}    
                     {{ message.name }}<small class="text-muted"> #{{ loop.revindex }}</small>
                 </span > 
                 <span class="mb-1 name" data-toggle='tooltip' data-placeent="top"
