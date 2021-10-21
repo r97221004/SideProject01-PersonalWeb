@@ -27,6 +27,12 @@ class Message(db.Model):
 # 在這裡不要加括號 
 # index = True 表示在這欄位加索引，這樣在搜索 timestamp 時會變快
 
+class Story(db.Model):
+    id = db.Column(db.Integer, primary_key = True)
+    title = db.Column(db.String(20))
+    body = db.Column(db.String(200))
+    site = db.Column(db.String(255), default = '/story')
+
 
 
     

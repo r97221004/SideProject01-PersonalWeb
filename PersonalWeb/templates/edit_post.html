@@ -1,0 +1,34 @@
+{% extends 'base.html' %}
+{% from 'bootstrap/form.html' import render_form %}
+
+{% block title %}新增最新動態{% endblock  %}
+
+{% block main %}
+
+{% for message in get_flashed_messages() %}
+<div class="alert alert-info flash">
+    <button type="button" class="close" data-dismiss="alert">&times;</button>
+    {{ message }}
+</div>
+{% endfor %}
+
+<section class="content-section" id="portfolio">
+    <div class="container px-4 px-lg-5">
+        <div class="content-section-heading text-center">
+            <h3 class="text-secondary mb-0 cont">持續更新中</h3>
+            <h2 class="mb-5 cont">專案進展與最新動態</h2>
+            <div class="row">
+                <div class="col-md-2"></div>
+                <div class="col-md-8 text-left mb-5 center1">
+                    {{ render_form(form, button_map = {'submit':'danger'}, extra_classes = 'post') }}
+                </div>
+                <div class="col-md-2"></div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<center ><div class="divider1"></div></center>
+
+{% endblock %}

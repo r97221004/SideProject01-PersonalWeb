@@ -1,7 +1,7 @@
 from flask_wtf import FlaskForm
 from wtforms.fields.core import BooleanField, StringField
 from wtforms.fields.simple import PasswordField, SubmitField, TextAreaField
-from wtforms.validators import DataRequired, Length
+from wtforms.validators import DataRequired, Length, Optional
 
 
 
@@ -15,4 +15,10 @@ class LoginForm(FlaskForm):
     password = PasswordField(label= '', validators = [DataRequired(), Length(1, 128)], render_kw = {'placeholder': '使用者密碼'})
     submit = SubmitField(label = '登入')
     remember = BooleanField(label = '記住我')
+
+class PostForm(FlaskForm):
+    title = StringField(label = '標題', validators = [DataRequired(), Length(1, 20),], render_kw = {'placeholder': '個人社群網站'})
+    body = StringField(label = '內文', validators = [DataRequired(), Length(1, 200)], render_kw = {'placeholder': '個人獨立小型專案, 支持多項功能, 進行中｡'})
+    site = StringField(label = '連結', validators = [DataRequired(), Length(0, 255)], render_kw = {'placeholder': '/story'}) 
+    submit = SubmitField(label = '送出')
     

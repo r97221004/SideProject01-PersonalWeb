@@ -326,9 +326,24 @@ input[type=checkbox] {
   margin: auto;
 }
 
-
 .bodycls{
   background-color:#4682B4;
+}
+
+.center1{
+  border: 2px solid silver;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  padding-right: 50px;
+  padding-left: 50px;
+  margin-top: 30px;
+  border-radius: 3rem;
+}
+
+.post label{
+  font-size: 25px;
+  font-weight: bold;
+  font-family: "Microsoft YaHei";
 }
 
 /* -------動態網頁的定義-------- */

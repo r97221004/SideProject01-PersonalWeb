@@ -1,7 +1,8 @@
 import re
 from flask.helpers import url_for
-from PersonalWeb.models import Message, User
-from PersonalWeb.forms import HelloForm, LoginForm
+from flask_wtf import form
+from PersonalWeb.models import Message, Story, User
+from PersonalWeb.forms import HelloForm, LoginForm, PostForm
 from PersonalWeb import app, db
 from flask import render_template, flash, redirect
 from flask_login import current_user, login_user, logout_user, login_required
@@ -38,6 +39,53 @@ def delete_message(message_id):
     flash('留言已經刪除')
     return redirect(url_for('message'))
 
+
+@app.route('/story', methods = ['GET', 'POST'])
+def story():
+    stories = Story.query.all()
+    form = PostForm()
+    if form.validate_on_submit():
+        if not current_user.is_authenticated:
+            return redirect(url_for('index'))
+        title = form.title.data
+        body = form.body.data
+        site = form.site.data
+        story = Story(title = title, body = body, site = site)
+        db.session.add(story)
+        db.session.commit()
+        flash('新增最新動態')
+        return redirect(url_for('story'))
+    return render_template('story.html', stories = stories, form = form)
+
+
+@app.route('/story/edit/<int:story_id>', methods = ['GET', 'POST'])
+@login_required
+def edit_story(story_id):
+    form = PostForm()
+    post = Story.query.get_or_404(story_id)
+    if form.validate_on_submit():
+        post.title = form.title.data
+        post.body = form.body.data
+        post.site = form.site.data
+        db.session.commit()
+        flash('更新成功')
+        return redirect(url_for('story'))
+    form.title.data = post.title
+    form.body.data = post.body
+    form.site.data = post.site
+    return render_template('edit_post.html', form = form)
+
+
+@app.route('/story/delete/<int:story_id>', methods = ['POST'])
+@login_required
+def delete_story(story_id):
+    story = Story.query.get_or_404(story_id)
+    db.session.delete(story)
+    db.session.commit()
+    flash('動態已經刪除')
+    return redirect(url_for('story'))
+
+
 @app.route('/login', methods = ['GET', 'POST'])
 def login():
     if current_user.is_authenticated:
@@ -70,8 +118,5 @@ def logout():
     return redirect(url_for('index'))
 
 
-@app.route('/story')
-def story():
-    return render_template('story.html')
     
     
