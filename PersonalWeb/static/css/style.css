@@ -271,8 +271,17 @@ body {
   height: 35px;
   margin-left: 15px;
   margin-top: 0px;
-  padding: .25rem 0px;
-}
+  padding: 0.25rem 0px;
+} /* rem 是一種相對長度單位。相對於根元素(即 html 元素) font-size 計算值的倍數。*/
+
+
+
+
+
+
+
+
+
 
 .inline{
   display: inline;
@@ -345,6 +354,9 @@ input[type=checkbox] {
   font-weight: bold;
   font-family: "Microsoft YaHei";
 }
+
+
+
 
 /* -------動態網頁的定義-------- */
 

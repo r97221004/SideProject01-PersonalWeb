@@ -1,5 +1,4 @@
 import click
-from click.core import _complete_visible_commands
 from click.termui import prompt
 from flask import cli
 
@@ -8,7 +7,7 @@ from PersonalWeb.models import Message, User, Story
 
 
 @app.cli.command()
-@click.option('--drop', is_flag = True, help = 'Create after drop.')
+@click.option('--drop', is_flag = True, help = 'Create after drop.') # 將 is_flag 參數設為 True 可以將這個選項聲明為布爾值標誌
 def initdb(drop):
     """Initialize the database."""
     if drop:
