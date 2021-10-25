@@ -173,6 +173,7 @@ body {
   font-weight: bold;
   font-family: "Microsoft YaHei";
   font-size: 20px;
+  margin-top: 20px !important;
 }
 
 .message input{
@@ -274,6 +275,38 @@ body {
   padding: 0.25rem 0px;
 } /* rem 是一種相對長度單位。相對於根元素(即 html 元素) font-size 計算值的倍數。*/
 
+.center1{
+  border: 2px solid silver;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  padding-right: 50px;
+  padding-left: 50px;
+  margin-top: 30px;
+  border-radius: 3rem;
+}
+
+input[type=text] {
+  height: 60px; 
+}
+
+input[type=submit] {
+  height: 60px;
+  width: 100%;
+  margin-top: 70px;
+  font-size: 20px;
+  font-weight: bold;
+  font-family:"Microsoft YaHei" ;
+} 
+
+.post label{
+  font-size: 25px;
+  font-weight: bold;
+  font-family: "Microsoft YaHei";
+}
+
+
+
+
 
 
 
@@ -288,28 +321,14 @@ body {
 }
 
 
-input[type=text] {
-  height: 60px; 
-}
-
 input[type=password] {
   height: 60px;
-}
-
-input[type=submit] {
-  height: 60px;
-  width: 100%;
-  margin-top: 70px;
-  font-size: 20px;
-  font-weight: bold;
-  font-family:"Microsoft YaHei" ;
 }
 
 input[type=checkbox] {
   width: 20px;
   height: 20px;
 }
-
 
 .form-check{ 
   float: left;
@@ -338,23 +357,6 @@ input[type=checkbox] {
 .bodycls{
   background-color:#4682B4;
 }
-
-.center1{
-  border: 2px solid silver;
-  padding-top: 30px;
-  padding-bottom: 30px;
-  padding-right: 50px;
-  padding-left: 50px;
-  margin-top: 30px;
-  border-radius: 3rem;
-}
-
-.post label{
-  font-size: 25px;
-  font-weight: bold;
-  font-family: "Microsoft YaHei";
-}
-
 
 
 

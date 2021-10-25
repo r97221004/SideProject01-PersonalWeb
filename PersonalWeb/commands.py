@@ -38,7 +38,7 @@ def forge():
 
     stories = [
 
-        {'title': '個人網頁', 'body': '個人獨立小型專案, 支持留言板與登入系統, 進行中｡', 'site': 'https://github.com/r97221004/SideProject01-PersonalWeb'},
+        {'title': '個人網站', 'body': '個人獨立小型專案, 支持留言板與登入系統, 進行中｡', 'site': 'https://github.com/r97221004/SideProject01-PersonalWeb'},
         {'title': '個人部落格', 'body': '個人獨立小型專案, 支持前台後台登入系統, 準備中｡'},
         {'title': 'LeetCode刷題記錄', 'body': '使用 Python 與 MySQL 的刷題記錄, 持續中｡', 'site': 'https://github.com/r97221004/LeetCode'},
         {'title': '資料分析', 'body': '使用 pandas 與 NumPy 等套件進行資料分析, 持續中｡', 'site':'https://github.com/r97221004/pandas'}

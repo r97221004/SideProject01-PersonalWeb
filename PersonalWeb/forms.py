@@ -10,11 +10,13 @@ class HelloForm(FlaskForm):
     body = TextAreaField(label = '內文', validators=[DataRequired(), Length(1, 200)], render_kw = {'placeholder': '我很確定我以後一定會遇到一面阻擋自己的牆, 一旦我撞上這面牆, 那我就得更加努力去嘗試, 付出一切去跨越這道牆｡'} )
     submit = SubmitField(label='決定送出')
 
+
 class LoginForm(FlaskForm):
     username = StringField(label = '', validators=[DataRequired(), Length(1, 20)], render_kw = {'placeholder': '使用者帳號'})
     password = PasswordField(label= '', validators = [DataRequired(), Length(1, 128)], render_kw = {'placeholder': '使用者密碼'})
     submit = SubmitField(label = '登入')
     remember = BooleanField(label = '記住我')
+
 
 class PostForm(FlaskForm):
     title = StringField(label = '標題', validators = [DataRequired(), Length(1, 20),], render_kw = {'placeholder': '個人社群網站'})
