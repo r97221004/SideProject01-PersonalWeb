@@ -1,12 +1,8 @@
-import re
-from flask.helpers import url_for
-from flask_wtf import form
 from PersonalWeb.models import Message, Story, User
 from PersonalWeb.forms import HelloForm, LoginForm, PostForm
 from PersonalWeb import app, db
-from flask import render_template, flash, redirect
+from flask import render_template, flash, redirect, url_for
 from flask_login import current_user, login_user, logout_user, login_required
-
 
 
 @app.route('/')
@@ -62,18 +58,18 @@ def story():
 @login_required
 def edit_story(story_id):
     form = PostForm()
-    post = Story.query.get_or_404(story_id)
+    story = Story.query.get_or_404(story_id)
     if form.validate_on_submit():
-        post.title = form.title.data
-        post.body = form.body.data
-        post.site = form.site.data
+        story.title = form.title.data
+        story.body = form.body.data
+        story.site = form.site.data
         db.session.commit()
         flash('更新成功')
         return redirect(url_for('story'))
-    form.title.data = post.title
-    form.body.data = post.body
-    form.site.data = post.site
-    return render_template('edit_post.html', form = form)
+    form.title.data = story.title
+    form.body.data = story.body
+    form.site.data = story.site
+    return render_template('edit_story.html', form = form)
 
 
 @app.route('/story/delete/<int:story_id>', methods = ['POST'])

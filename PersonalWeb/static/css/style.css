@@ -42,7 +42,6 @@ body {
   max-width: 82em;
 }
 
-
 /*
  * Header
  */
@@ -304,20 +303,12 @@ input[type=submit] {
   font-family: "Microsoft YaHei";
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
 .inline{
   display: inline;
+}
+
+.bodycls{
+  background-color:#4682B4;
 }
 
 
@@ -353,11 +344,6 @@ input[type=checkbox] {
   bottom: 0px;
   margin: auto;
 }
-
-.bodycls{
-  background-color:#4682B4;
-}
-
 
 
 /* -------動態網頁的定義-------- */
@@ -396,6 +382,3 @@ caption {
   padding-right: 3rem !important;
   padding-left: 3rem !important;
 }
-
-
-

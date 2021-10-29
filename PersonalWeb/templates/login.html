@@ -28,7 +28,6 @@
     </style>
 </head>
 
-
 <body class="text-center bodycls">
     <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
         <header class="masthead mb-auto">
@@ -45,8 +44,6 @@
         </header>  
 
         <main role="main" class="inner cover">
-            
-
             <div class="row">
                 <div class="col-md-3"></div>
                 <div class="col-md-6 lgin">
@@ -57,12 +54,10 @@
                     </div>
                     {% endfor %}
                     <h1 class="text-left cont">登入</h1>
-                    {{ render_form(form, button_map = {'submit':'danger'}, extra_classes = '') }}
+                    {{ render_form(form, button_map = {'submit':'danger'}) }}
                 </div>
                 <div class="col-md-3"></div>
             </div>
-    
-        <!-- <div style="margin-top: 200px; margin-bottom: 0px;"></div> -->
         </main> 
   
 <script type="text/javascript" src="{{ url_for('static', filename='js/jquery-3.2.1.slim.min.js') }}"></script>
