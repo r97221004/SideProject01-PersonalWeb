@@ -1,8 +1,8 @@
-from PersonalWeb.models import Message, Story, User
-from PersonalWeb.forms import HelloForm, LoginForm, PostForm
-from PersonalWeb import app, db
 from flask import render_template, flash, redirect, url_for
 from flask_login import current_user, login_user, logout_user, login_required
+from PersonalWeb import app, db
+from PersonalWeb.models import Message, Story, User
+from PersonalWeb.forms import HelloForm, LoginForm, PostForm
 
 
 @app.route('/')
